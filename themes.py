@@ -7,8 +7,30 @@ def get_theme_css(theme_name: str) -> str:
         .block-container { padding-top: 2.5rem; max-width: 95% !important; }
         [data-testid="stToolbar"] { visibility: hidden; }
         [data-testid="stHeader"] { background-color: transparent !important; }
-        [data-testid="collapsedControl"] { display: flex !important; z-index: 999999 !important; color: #ff4b4b !important; background: rgba(0,0,0,0.2) !important; border-radius: 5px !important; }
-        [data-testid="collapsedControl"] svg { fill: currentColor !important; color: currentColor !important; }
+        /* Sidebar toggle button - cover all Streamlit versions */
+        [data-testid="collapsedControl"],
+        [data-testid="stSidebarCollapsedControl"],
+        button[kind="header"],
+        [data-testid="stHeader"] button {
+            display: flex !important;
+            visibility: visible !important;
+            z-index: 999999 !important;
+            color: #ff4b4b !important;
+            background: rgba(30,30,30,0.7) !important;
+            border-radius: 8px !important;
+            opacity: 1 !important;
+            width: 36px !important;
+            height: 36px !important;
+            position: relative !important;
+        }
+        [data-testid="collapsedControl"] svg,
+        [data-testid="stSidebarCollapsedControl"] svg,
+        [data-testid="stHeader"] button svg {
+            fill: #ff4b4b !important;
+            color: #ff4b4b !important;
+            width: 24px !important;
+            height: 24px !important;
+        }
 
         .hero-section {
             border-radius: 25px;
