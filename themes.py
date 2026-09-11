@@ -6,6 +6,8 @@ def get_theme_css(theme_name: str) -> str:
 
         .block-container { padding-top: 0.5rem; max-width: 95% !important; }
         [data-testid="stToolbar"] { visibility: hidden; }
+        [data-testid="collapsedControl"] { display: flex !important; z-index: 999999 !important; color: #ff4b4b !important; background: rgba(0,0,0,0.1) !important; border-radius: 5px !important; }
+        [data-testid="collapsedControl"] svg { fill: currentColor !important; color: currentColor !important; }
 
         .hero-section {
             border-radius: 25px;
