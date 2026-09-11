@@ -4,9 +4,10 @@ def get_theme_css(theme_name: str) -> str:
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700;900&display=swap');
 
-        .block-container { padding-top: 0.5rem; max-width: 95% !important; }
+        .block-container { padding-top: 2.5rem; max-width: 95% !important; }
         [data-testid="stToolbar"] { visibility: hidden; }
-        [data-testid="collapsedControl"] { display: flex !important; z-index: 999999 !important; color: #ff4b4b !important; background: rgba(0,0,0,0.1) !important; border-radius: 5px !important; }
+        [data-testid="stHeader"] { background-color: transparent !important; }
+        [data-testid="collapsedControl"] { display: flex !important; z-index: 999999 !important; color: #ff4b4b !important; background: rgba(0,0,0,0.2) !important; border-radius: 5px !important; }
         [data-testid="collapsedControl"] svg { fill: currentColor !important; color: currentColor !important; }
 
         .hero-section {
