@@ -5,7 +5,7 @@ def get_theme_css(theme_name: str) -> str:
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700;900&display=swap');
 
         .block-container { padding-top: 0.5rem; max-width: 95% !important; }
-        header { visibility: hidden; }
+        [data-testid="stToolbar"] { visibility: hidden; }
 
         .hero-section {
             border-radius: 25px;
